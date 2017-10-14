@@ -6,4 +6,11 @@
 //#endregion
 
 
+//#region -  Random number generator, returns hidden random number based on given range.
+function generateNumber(min, max) {
+    var hiddenNum = Math.round((Math.random() * (max - min)) + min);
+    console.log("Hidden number is " + hiddenNum + ".");
+    return hiddenNum;
+}
+//#endregion
 
